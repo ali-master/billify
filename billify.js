@@ -29,7 +29,7 @@ var billify = function() {
 	}
 };
 
-billify.prototype.version = "1.0.0";
+billify.prototype.version = "1.0.1";
 billify.prototype.setConfig = function(options) {
 	var options = options || {};
 
@@ -146,4 +146,8 @@ billify.prototype.getData = function() {
 	};
 }
 
-module.exports = billify;
+if (typeof module != 'undefined' && module.exports && this.module !== module) {
+	module.exports = billify;
+}else if (typeof define === 'function' && define.amd) {
+	define(billify);
+}
