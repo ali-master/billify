@@ -5,8 +5,6 @@
 "use strict"
 // billify.js
 var billify = function() {
-	this._error = false;
-
 	this._barcode = null;
 	this._currency = "toman";
 	this._lang = "en";
@@ -139,9 +137,8 @@ billify.prototype.getData = function() {
 		// صحت شناسه پرداخت
 		"verificationBillPayment": this.verificationBillPayment(),
 
-		// واحد پولی
-		"currency": this._currency,
 		"configs": {
+			// واحد پولی
 			"currency": this._currency,
 			"lang": this._lang,
 			"EnToFa": this._EnToFa
