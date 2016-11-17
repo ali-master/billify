@@ -11,17 +11,14 @@
     "url": "git+https://github.com/ali-master/billify.git"
   },
   "bugs": {
-   "url": "https://github.com/ali-master/billify/issues"
- },
- "homepage": "https://github.com/ali-master/billify#readme",
+    "url": "https://github.com/ali-master/billify/issues"
+  },
+  "homepage": "https://github.com/ali-master/billify#readme",
   "keywords": [
     "billify",
     "bill"
   ],
   "author": "Ali Torki",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/ali-master/billify/issues"
-  },
-  "homepage": "https://github.com/ali-master/billify#readme"
+  "devDependencies": {}
 }
