@@ -1,6 +1,6 @@
 {
   "name": "billify",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Iranian Bill Detector",
   "main": "billify.js",
   "scripts": {
