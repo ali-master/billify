@@ -58,7 +58,7 @@ billify.prototype.getBillAmount = function() {
 	var currency = (this._currency == "rial") ? 1000 : 100;
 	var amount = parseInt(this._billPayment.toString().slice(0, -5)) * currency;
 
-	return (this._EnToFa == true ? this.digitsEn2Fa(amount) : amount) || "undefined";
+	return (this._EnToFa == true ? this._digitsEn2Fa(amount) : amount) || "undefined";
 }
 billify.prototype.getBillType = function() {
 	var billLangType = (this._lang == "fa") ? this._billTypes.fa : this._billTypes.en;
@@ -112,7 +112,7 @@ billify.prototype._verification = function(sum, checkId) {
 	status = (modify < 2) ? 0 : 11 - modify;
 	return (status == parseInt(checkId)) ? true : false;
 };
-billify.prototype.digitsEn2Fa = function(number) {
+billify.prototype._digitsEn2Fa = function(number) {
 	return number.toString().replace(/\d/g, function(dist){
 		return String.fromCharCode(dist.charCodeAt(0) + 1728);
 	});
@@ -120,13 +120,13 @@ billify.prototype.digitsEn2Fa = function(number) {
 billify.prototype.getData = function() {
 	return {
 		// مبلغ قبض
-		"amount": (this._EnToFa == true) ? this.digitsEn2Fa(this.getBillAmount()) : this.getBillAmount(),
+		"amount": (this._EnToFa == true) ? this._digitsEn2Fa(this.getBillAmount()) : this.getBillAmount(),
 
 		// نوع قبض
 		"type": this.getBillType(),
 
 		// بارکد قبض
-		"barcode": (this._EnToFa == true) ? this.digitsEn2Fa(this.getBarcode()) : this.getBarcode(),
+		"barcode": (this._EnToFa == true) ? this._digitsEn2Fa(this.getBarcode()) : this.getBarcode(),
 
 		// صحت ارتباط شناسه قبض و پرداخت
 		"validationBill": this.verificationBill(),
