@@ -29,7 +29,7 @@ var billify = function() {
 	}
 };
 
-billify.prototype.version = "1.0.1";
+billify.prototype.version = "1.1.1";
 billify.prototype.setConfig = function(options) {
 	var options = options || {};
 
