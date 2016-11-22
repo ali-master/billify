@@ -1,5 +1,11 @@
 # Iranian Bill Detector
-bill.js exposes a simple API for detect bill information
+bill.js exposes a simple API for detect bill information.
+
+[![npm version](https://img.shields.io/npm/v/npm.svg?style=flat-square)](https://www.npmjs.com/package/billify)
+[![npm](https://img.shields.io/npm/l/express.svg?style=flat-square)](https://www.npmjs.com/package/billify)
+[![npm downloads](https://img.shields.io/npm/dt/express.svg?style=flat-square)](https://www.npmjs.com/package/billify)
+[![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg?style=flat-square)](https://gitter.im/billify/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link)
+
 ### Features
 - Detect Bill information by `bill Id` and `bill Payment`
 - Detect Bill information by `bill Barcode`
