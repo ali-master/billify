@@ -4,7 +4,7 @@
  */
 "use strict"
 // billify.js
-var billify = function() {
+var billify = function () {
 	this._barcode = null;
 	this._currency = "toman";
 	this._lang = "en";
@@ -27,9 +27,14 @@ var billify = function() {
 			6: "شهرداری",
 		}
 	}
+
+	if(arguments[0] && arguments[1]){
+		this.setId(arguments[0]);
+		this.setPeymentId(arguments[1]);
+	}
 };
 
-billify.prototype.version = "1.1.3";
+billify.prototype.version = "1.2.3";
 billify.prototype.setConfig = function(options) {
 	var options = options || {};
 

@@ -5,12 +5,30 @@ bill.js exposes a simple API for detect bill information
 - Detect Bill information by `bill Barcode`
 
 ### Usage
+- *Import This package into you'r project*
 ```javascript
-// bill id
+// ES6
+import billify from "billify";
+
+// RequireJS
+var billify = require('billify');
+
+// Define
+define(['billify'], function(){
+    // some you'r code...
+});
+```
+
+### Callback functions
+```javascript
+// set bill id in prototype function of billify
 billify.setId(8887858300146)
 
-// bill payment
+// set bill payment in prototype function of billify
 billify.setPeymentId(51350244)
+
+// set billId and billPaymentId in constructor of billify
+billify(8887858300146, 51350244);
 
 // set config
 billify.setConfig({
@@ -54,17 +72,29 @@ billify.getData();
 ```
 
 ### Installation
+##### Method One:
 Download and extract the [latest pre-built release](https://github.com/ali-master/billify/releases).
 
-Just grab bill.js and include them with a script tag.
+Just grab billify.min.js and include them with a script tag.
 ```javascript
-<script src="bill.js"></script>
+<script src="billify.min.js"></script>
 <script>
+    // set billId and billPaymentId in prototype functions of billify
     var bill = new billify();
-    bill.setId();
-    bill.setPaymentId();
+    bill.setId(8887858300146);
+    bill.setPaymentId(51350244);
+    var billResult = bill.getData();
+
+    // set billId and billPaymentId in constructor of billify
+    var bill = new billify(8887858300146, 51350244);
     var billResult = bill.getData();
 </script>
+```
+
+##### Method Two:
+installation with NPM
+```sh
+$ npm install billify
 ```
 
 ### Contributors & Forks
