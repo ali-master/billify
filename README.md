@@ -1,4 +1,6 @@
 # Iranian Bill Detector
+
+[![Join the chat at https://gitter.im/billify/Lobby](https://badges.gitter.im/billify/Lobby.svg)](https://gitter.im/billify/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 bill.js exposes a simple API for detect bill information
 ### Features
 - Detect Bill information by `bill Id` and `bill Payment`
