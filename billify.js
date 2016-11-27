@@ -34,7 +34,7 @@ var billify = function () {
 	}
 };
 
-billify.prototype.version = "1.2.5";
+billify.prototype.version = "1.2.6";
 billify.prototype.setConfig = function(options) {
 	var options = options || {};
 

@@ -107,3 +107,5 @@ $ npm install billify
 > Contributors: [https://github.com/ali-master/billify/graphs/contributors](https://github.com/ali-master/billify/graphs/contributors)
 
 > Forks: [https://github.com/ali-master/billify/network/members](https://github.com/ali-master/billify/network/members)
+
+You can try out the Node package online at [tonicdev](https://runkit.com/alimaster/billify)
