@@ -10,4 +10,5 @@ QUnit.test("billify", function(assert) {
 	billTest(2813823309056, 38743208, 38700);
 	billTest(2813823309056, 74952182, 74900);
 	billTest(2813823309056, 11652243, undefined);
+	billTest(7106329993556, 78850759, 78800);
 });
