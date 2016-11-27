@@ -39,7 +39,7 @@ billify(8887858300146, 51350244);
 // set config
 billify.setConfig({
     // Rial OR Toman
-    currency: "Rial"
+    currency: "Rial",
     // Farsi OR English
     lang: "en", // value just: fa or en
     // convert numbers from english to farsi and reverse
